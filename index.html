@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAH and Coins</title>
+    <style>
+        body {
+            background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(78, 56, 56, 0.7)), url('../img/bitcoin-bg.jpg');
+            font-family: sans-serif;
+        }
+        .money_card {
+            width: 200px;
+            text-align: center;
+            padding: 40px 50px;
+            margin-top: 24px;
+            border: 1px solid #000;
+            border-radius: 15px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(78, 56, 56, 0.7)), url('../img/1605042952_2585.jpg');
+        }
+        .bills {
+            font-size: 25px;
+            font-weight: 800;
+            color: rgb(255, 238, 0);
+            text-shadow: rgb(184, 112, 233) 1px 0 1px;;
+        }
+        .coin {
+            font-size: 20px;
+            font-weight: 800;
+            color: rgb(20, 238, 220);
+            text-shadow: rgb(233, 18, 204) 1px 0 1px;;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h4>Курс на сегодня 1 bit = <span>00000</span> UAH</h4>
+        <h2>Введите сумму которую хотите перевести в Биткоин</h2>
+
+        <div class="money_block">
+            <input class="user_cash" type="number" placeholder="Введите сумму: 10,50">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="money_card">
+            <span class="bills">00</span> грн.
+            <span class="coin">00</span> коп.
+        </div>
+        <div class="bitcoin_result">
+            <h5>Вы сможете полуить: <span>0</span> Биткоинов</h5>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
