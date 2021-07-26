@@ -9,27 +9,56 @@
         body {
             background-image:  linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(78, 56, 56, 0.7)), url('../img/bitcoin-bg.jpg');
             font-family: sans-serif;
+            text-align: center;
+        }
+        h2 {
+            color:rgb(233, 236, 51);
+            text-shadow: rgb(30, 28, 32) 1px 0 1px;
+        }
+        .user_cash {
+            padding: 5px 25px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .user_cash-btn {
+            padding: 5px 20px;
+            border-radius: 5px;
+            background-color: rgb(91, 117, 169);
+            color: #fff;
+            font-weight: 700;
         }
         .money_card {
+            display: block;
             width: 200px;
             text-align: center;
             padding: 40px 50px;
+            margin: 0 auto;
             margin-top: 24px;
             border: 1px solid #000;
             border-radius: 15px;
             background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(78, 56, 56, 0.7)), url('../img/1605042952_2585.jpg');
+            /* object-fit: cover; */
         }
         .bills {
             font-size: 25px;
             font-weight: 800;
             color: rgb(255, 238, 0);
-            text-shadow: rgb(184, 112, 233) 1px 0 1px;;
+            text-shadow: rgb(184, 112, 233) 1px 0 1px;
         }
         .coin {
             font-size: 20px;
             font-weight: 800;
             color: rgb(20, 238, 220);
             text-shadow: rgb(233, 18, 204) 1px 0 1px;;
+        }
+        .bitcoin_result {
+            border: 1px solid #000;
+            background-color: #fff;
+            display: inline-block;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 3px;
+            transition: all 0.3s;
         }
 
     </style>
@@ -41,7 +70,7 @@
 
         <div class="money_block">
             <input class="user_cash" type="number" placeholder="Введите сумму: 10,50">
-            <button type="submit">Submit</button>
+            <button class="user_cash-btn" type="submit">Submit</button>
         </div>
         <div class="money_card">
             <span class="bills">00</span> грн.
